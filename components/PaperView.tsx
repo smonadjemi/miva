@@ -3,24 +3,6 @@ import { Avatar, Box, Divider, Flex, Group, Indicator, Text, Tooltip } from "@ma
 import { useAtomValue } from "jotai";
 
 
-function groupAndSortTags(tags: string[], attrs: any) {
-    // Group by color
-    const groups = tags.reduce((acc, tag) => {
-        const key = (attrs[tag] && attrs[tag].path) || 'unknown';
-        if (!acc[key]) acc[key] = [];
-        acc[key].push(tag);
-        return acc;
-    }, {});
-
-    // Sort group keys alphabetically and produce array of { key, tags }
-    const sortedByKey = Object.keys(groups)
-        .sort() // change comparator if needed
-        .map(key => ({ key, tags: groups[key] }));
-
-    return sortedByKey;
-}
-
-
 export default function PaperView({ papers }: { papers: any }) {
 
     const leafNodes = useAtomValue(leafNodesAtom)
