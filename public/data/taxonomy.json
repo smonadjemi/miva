@@ -1,0 +1,883 @@
+{
+  "id": "miva",
+  "label": "Mixed-Initiative Visual Analytics",
+  "description": "",
+  "color_code": "",
+  "icon": "",
+  "children": [
+    {
+      "id": "human_contribution",
+      "label": "Human Contribution",
+      "description": "How do humans contribute to the shared task?",
+      "color_code": "1",
+      "icon": "/icons/human.png",
+      "children": [
+        {
+          "id": "goal_augmentation",
+          "label": "Goal Augmentation",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "specify_constraints",
+              "label": "Specify Constraints",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "select_seed_examples",
+              "label": "Select Seed Examples",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "decision_augmentation",
+          "label": "Decision Augmentation",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "approve_results",
+              "label": "Approve Results",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "accept_suggestions",
+              "label": "Accept Suggestions",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "assign_values_to_parameters",
+              "label": "Assign Values To Parameters",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "cognitive_augmentation",
+          "label": "Cognitive Augmentation",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "inspect_userdefined_alternatives",
+              "label": "Inspect User-Defined Alternatives",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "inspect_aisuggested_alternatives",
+              "label": "Inspect Ai-Suggested Alternatives",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "determine_importance",
+              "label": "Determine Importance",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "action_augmentation",
+          "label": "Action Augmentation",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "manipulate_recommendations",
+              "label": "Manipulate Recommendations",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "prompt_the_ai_agent",
+              "label": "Prompt The Ai Agent",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai_contribution",
+      "label": "AI Contribution",
+      "description": "How do artificial agents contribute to the shared task?",
+      "color_code": "0",
+      "icon": "/icons/robot.png",
+      "children": [
+        {
+          "id": "goal_augmentation_",
+          "label": "Goal Augmentation ",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "explore_search_space",
+              "label": "Explore Search Space",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "decision_augmentation_",
+          "label": "Decision Augmentation ",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "update_layout",
+              "label": "Update Layout",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "classify_topics",
+              "label": "Classify Topics",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "cognitive_augmentation_",
+          "label": "Cognitive Augmentation ",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "summarize_text",
+              "label": "Summarize Text",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "extract_data",
+              "label": "Extract Data",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "extract_structure_from_charts",
+              "label": "Extract Structure From Charts",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "predict_outcomes",
+              "label": "Predict Outcomes",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "action_augmentation_",
+          "label": "Action Augmentation ",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "recommend_alternatives",
+              "label": "Recommend Alternatives",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "generate_search_space",
+              "label": "Generate Search Space",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared_task",
+      "label": "Shared Task",
+      "description": "What is the shared task?",
+      "color_code": "3",
+      "icon": "/icons/task.png",
+      "children": [
+        {
+          "id": "data",
+          "label": "Data",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "summarize_text",
+              "label": "Summarize Text",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "discover_relevant_data",
+              "label": "Discover Relevant Data",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "extract_data_from_images",
+              "label": "Extract Data From Images",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "annotate_data",
+              "label": "Annotate Data",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "rank_data",
+              "label": "Rank Data",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "visualizations",
+          "label": "Visualizations",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "extract_visualization_layout",
+              "label": "Extract Visualization Layout",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "make_visualizations",
+              "label": "Make Visualizations",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "generate_captions",
+              "label": "Generate Captions",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "refine_layout",
+              "label": "Refine Layout",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "refer_to_visualizations_in_text",
+              "label": "Refer To Visualizations In Text",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "models",
+          "label": "Models",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "refine_models",
+              "label": "Refine Models",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "inspect_models",
+              "label": "Inspect Models",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "analyze_clusters",
+              "label": "Analyze Clusters",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "understand_models",
+              "label": "Understand Models",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "knowledgedecisions",
+          "label": "Knowledge/Decisions",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "discover_evidence",
+              "label": "Discover Evidence",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "navigate_design_space",
+              "label": "Navigate Design Space",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "generate_insight",
+              "label": "Generate Insight",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "externalize_knowledge",
+              "label": "Externalize Knowledge",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "forecast_outcomes",
+              "label": "Forecast Outcomes",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "impact_of_mixedinitiative",
+      "label": "Impact of Mixed-Initiative",
+      "description": "What is the the impact of mixed-initiative on the shared task?",
+      "color_code": "2",
+      "icon": "/icons/impact.png",
+      "children": [
+        {
+          "id": "speed",
+          "label": "Speed",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "faster_than_human_alone",
+              "label": "Faster Than Human Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "faster_than_ai_alone",
+              "label": "Faster Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "accuracy",
+          "label": "Accuracy",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "more_accurate_than_human_alone",
+              "label": "More Accurate Than Human Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_accurate_than_ai_alone",
+              "label": "More Accurate Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "alignment_with_human_mind",
+          "label": "Alignment With Human Mind",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "more_intune_with_humans_notion_of_quality",
+              "label": "More In-Tune With Human'S Notion Of Quality",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_aligned_with_humans_preferences",
+              "label": "More Aligned With Human'S Preferences",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_creative_than_ai_alone",
+              "label": "More Creative Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_flexible_than_ai_alone",
+              "label": "More Flexible Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_sociable_than_ai_alone",
+              "label": "More Sociable Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_intune_with_humans_mental_model",
+              "label": "More In-Tune With Human'S Mental Model",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_engaging_than_human_alone",
+              "label": "More Engaging Than Human Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "knowledge",
+          "label": "Knowledge",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "more_domain_knowledge_than_ai_alone",
+              "label": "More Domain Knowledge Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_realtime_knowledge_than_humanai_alone",
+              "label": "More Real-Time Knowledge Than Human/Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "accessibility_and_convenience",
+          "label": "Accessibility And Convenience",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "lower_cognitive_load_than_human_alone",
+              "label": "Lower Cognitive Load Than Human Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "easier_model_understanding_than_ai_alone",
+              "label": "Easier Model Understanding Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_accessible_to_nontechnical_users_than_ai_alone",
+              "label": "More Accessible To Non-Technical Users Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "more_familiar_to_users_than_ai_alone",
+              "label": "More Familiar To Users Than Ai Alone",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "nicer_to_have_human_control",
+              "label": "Nicer To Have Human Control",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evaluation",
+      "label": "Evaluation",
+      "description": "How is the mixed-initiative system evaluated?",
+      "color_code": "4",
+      "icon": "/icons/evaluation.png",
+      "children": [
+        {
+          "id": "qualitative",
+          "label": "Qualitative",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "interview",
+              "label": "Interview",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "qualitative_algorithm_evaluation",
+              "label": "Qualitative Algorithm Evaluation",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "case_study",
+              "label": "Case Study",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "field_study",
+              "label": "Field Study",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "quantitative",
+          "label": "Quantitative",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": [
+            {
+              "id": "algorithm_evaluation",
+              "label": "Algorithm Evaluation",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "experiment",
+              "label": "Experiment",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "likert_survey",
+              "label": "Likert Survey",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            },
+            {
+              "id": "quantitative_algorithm_evaluation",
+              "label": "Quantitative Algorithm Evaluation",
+              "description": "TBW",
+              "color_code": null,
+              "icon": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "principles_of_miui",
+      "label": "Principles of Mixed-Initiative UI",
+      "description": "Which of Hovitz's principles of mixed-initiative user interfaces are observed?",
+      "color_code": "5",
+      "icon": "/icons/principles.png",
+      "children": [
+        {
+          "id": "significant_value_added",
+          "label": "Significant Value Added",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "efficient_result_refinement",
+          "label": "Efficient Result Refinement",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "direct_invocationtermination",
+          "label": "Direct Invocation/Termination",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "aware_of_user_attention",
+          "label": "Aware Of User Attention",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "continuous_learning_by_observing",
+          "label": "Continuous Learning By Observing",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "minimize_poor_actionstiming",
+          "label": "Minimize Poor Actions/Timing",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "aware_of_user_goal_uncertainty",
+          "label": "Aware Of User Goal Uncertainty",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "dialog_for_uncertainty_resolution",
+          "label": "Dialog For Uncertainty Resolution",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "working_memory_of_interactions",
+          "label": "Working Memory Of Interactions",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "consider_ai_latency",
+          "label": "Consider Ai Latency",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "consider_costs_benefits_uncertainties",
+          "label": "Consider Costs, Benefits, Uncertainties",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "level_of_automation",
+      "label": "Level of Automation",
+      "description": "How much automation is provided by the artificial agent in the mixed-initiative system?",
+      "color_code": "6",
+      "icon": "/icons/level.png",
+      "children": [
+        {
+          "id": "2_computer_offers_all_options",
+          "label": "(2) Computer Offers All Options",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "3_computer_suggests_a_few_options",
+          "label": "(3) Computer Suggests A Few Options",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "4_computer_suggests_one_option",
+          "label": "(4) Computer Suggests One Option",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "5_computer_acts_upon_human_approval",
+          "label": "(5) Computer Acts Upon Human Approval",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "7_computer_acts_and_informs_the_human",
+          "label": "(7) Computer Acts And Informs The Human",
+          "description": "TBW",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}
