@@ -257,7 +257,7 @@
         {
           "id": "data",
           "label": "Data",
-          "description": "TBW",
+          "description": "The shared task involves working with data.",
           "color_code": null,
           "icon": null,
           "children": [
@@ -306,7 +306,7 @@
         {
           "id": "visualizations",
           "label": "Visualizations",
-          "description": "TBW",
+          "description": "The shared task involves visualizations.",
           "color_code": null,
           "icon": null,
           "children": [
@@ -355,7 +355,7 @@
         {
           "id": "models",
           "label": "Models",
-          "description": "TBW",
+          "description": "The shared task involves working with models.",
           "color_code": null,
           "icon": null,
           "children": [
@@ -396,7 +396,7 @@
         {
           "id": "knowledgedecisions",
           "label": "Knowledge/Decisions",
-          "description": "TBW",
+          "description": "The shared task involves knowledge generation or decision making.",
           "color_code": null,
           "icon": null,
           "children": [
@@ -743,7 +743,7 @@
         {
           "id": "significant_value_added",
           "label": "Significant Value Added",
-          "description": "TBW",
+          "description": "Provide automated services that provide genuine value over direct manipulation.",
           "color_code": null,
           "icon": null,
           "children": []
@@ -751,7 +751,7 @@
         {
           "id": "efficient_result_refinement",
           "label": "Efficient Result Refinement",
-          "description": "TBW",
+          "description": "Provide affordances to complete or refine an analysis provided by an agent.",
           "color_code": null,
           "icon": null,
           "children": []
@@ -759,23 +759,23 @@
         {
           "id": "direct_invocationtermination",
           "label": "Direct Invocation/Termination",
-          "description": "TBW",
+          "description": "Provide efficient means by which users can invoke or terminate the automated services.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "aware_of_user_attention",
-          "label": "Aware Of User Attention",
-          "description": "TBW",
+          "label": "Aware of User Attention",
+          "description": "Consider attention of users and defer autonomous action to a time when it will be less distracting.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "continuous_learning_by_observing",
-          "label": "Continuous Learning By Observing",
-          "description": "TBW",
+          "label": "Continuous Learning by Observing",
+          "description": "Continue to become better at working with users by continuing to learn about a user's goals and needs.",
           "color_code": null,
           "icon": null,
           "children": []
@@ -783,38 +783,38 @@
         {
           "id": "minimize_poor_actionstiming",
           "label": "Minimize Poor Actions/Timing",
-          "description": "TBW",
+          "description": "Minimize the cost of poor guesses, including appropriate time-outs and natural gestures for rejecting attempts at service.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "aware_of_user_goal_uncertainty",
-          "label": "Aware Of User Goal Uncertainty",
-          "description": "TBW",
+          "label": "Aware of Uncertainty in User Goals",
+          "description": "Infer and exploit the uncertainty about a user's intentions and focus.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "dialog_for_uncertainty_resolution",
-          "label": "Dialog For Uncertainty Resolution",
-          "description": "TBW",
+          "label": "Dialog for Uncertainty Resolution",
+          "description": "Engage in efficient dialog with users to resolve uncertainties about their goals and intentions.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "working_memory_of_interactions",
-          "label": "Working Memory Of Interactions",
-          "description": "TBW",
+          "label": "Working Memory of Interactions",
+          "description": "Maintain a memory of recent interactions and allow referring to them seamlessly.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "consider_ai_latency",
-          "label": "Consider Ai Latency",
+          "label": "Consider AI Latency",
           "description": "TBW",
           "color_code": null,
           "icon": null,
@@ -838,41 +838,81 @@
       "icon": "/icons/level.png",
       "children": [
         {
+          "id": "1_computer_offers_no_options",
+          "label": "Level 1",
+          "description": "Computer offers no assistance. The human must take all decisions and actions.",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
           "id": "2_computer_offers_all_options",
-          "label": "(2) Computer Offers All Options",
-          "description": "TBW",
+          "label": "Level 2",
+          "description": "Computer offers a complete set of decision/action alternatives. The human must choose among them.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "3_computer_suggests_a_few_options",
-          "label": "(3) Computer Suggests A Few Options",
-          "description": "TBW",
+          "label": "Level 3",
+          "description": "Computer narrows the options down to a few.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "4_computer_suggests_one_option",
-          "label": "(4) Computer Suggests One Option",
-          "description": "TBW",
+          "label": "Level 4",
+          "description": "Computer suggests one option.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "5_computer_acts_upon_human_approval",
-          "label": "(5) Computer Acts Upon Human Approval",
-          "description": "TBW",
+          "label": "Level 5",
+          "description": "Computer acts upon human approval.",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "6_computer_acts_after_some_time",
+          "label": "Level 6",
+          "description": "Computer allows the human a restricted time to veto before acting autonomously.",
           "color_code": null,
           "icon": null,
           "children": []
         },
         {
           "id": "7_computer_acts_and_informs_the_human",
-          "label": "(7) Computer Acts And Informs The Human",
-          "description": "TBW",
+          "label": "Level 7",
+          "description": "Computer acts autonomously and informs the human.",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "8",
+          "label": "Level 8",
+          "description": "Computer acts autonomously and informs the human only if asked.",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "9",
+          "label": "Level 9",
+          "description": "Computer acts autonomously and informs the human only if the computer decides to.",
+          "color_code": null,
+          "icon": null,
+          "children": []
+        },
+        {
+          "id": "10",
+          "label": "Level 10",
+          "description": "Computer decides everything, acts autonomously, ignoring the human.",
           "color_code": null,
           "icon": null,
           "children": []
