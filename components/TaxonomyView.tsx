@@ -21,7 +21,7 @@ function AccordionLabel({ label, icon, description, color }: AccordionLabelProps
     console.log(color)
     return (
         <Group wrap="nowrap">
-            <Avatar src={icon? icon: null} radius="xl" size="md" variant="filled" color={color} bg={color}>
+            <Avatar src={icon? `.${icon}` : null} radius="xl" size="md" variant="filled" color={color} bg={color}>
                 {!icon && <IconArrowRight />}
             </Avatar>
             <div>

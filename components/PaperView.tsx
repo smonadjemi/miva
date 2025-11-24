@@ -1,9 +1,10 @@
 import { colorsAtom, leafNodesAtom, taxonomyAtom } from "@/atoms/global_atoms";
+import { Paper } from "@/types/types";
 import { Avatar, Box, Divider, Flex, Group, Indicator, Text, Tooltip } from "@mantine/core";
 import { useAtomValue } from "jotai";
 
 
-export default function PaperView({ papers }: { papers: any }) {
+export default function PaperView({ papers }: { papers: Paper[] | null }) {
 
     const leafNodes = useAtomValue(leafNodesAtom)
     const colors = useAtomValue(colorsAtom)
@@ -35,7 +36,7 @@ function Tags({ tags }: { tags: string[] }) {
     const colors = useAtomValue(colorsAtom)
     const taxonomy = useAtomValue(taxonomyAtom)
 
-    const groups = tags.reduce((acc, tag) => {
+    const groups = tags.reduce((acc: { [key: string]: string[] }, tag: string) => {
         const key: string | undefined = (leafNodes && leafNodes[tag] && leafNodes[tag].path.split('/')[1]) || undefined;
         if (key) {
             acc[key] = acc[key] || [];
@@ -50,7 +51,7 @@ function Tags({ tags }: { tags: string[] }) {
 
     return <Flex wrap="wrap" gap={0} pt={'md'}>
         {
-            taxonomy.children.map((group) => (
+            taxonomy?.children.map((group) => (
                 groups[group.id]?.length > 0 ?
                     <Box key={group.id} px={'xs'}>
                         <Tooltip
@@ -66,7 +67,7 @@ function Tags({ tags }: { tags: string[] }) {
                                     radius="xl"
                                     variant="filled"
                                     bg={colors && group.color_code in colors ? colors[group.color_code].light : ''}
-                                    src={group.icon ? group.icon : undefined}
+                                    src={group.icon ? `.${group.icon}` : undefined}
                                     style={{ marginRight: 4, verticalAlign: 'middle' }}
                                 />
                             </Indicator>
@@ -85,7 +86,7 @@ function Tags({ tags }: { tags: string[] }) {
                                 opacity={0.1}
                                 variant="filled"
                                 bg={colors && group.color_code in colors ? colors[group.color_code].light : ''}
-                                src={group.icon ? group.icon : undefined}
+                                src={group.icon ? `.${group.icon}` : undefined}
                                 color={colors && group.color_code in colors ? colors[group.color_code].light : ''}
                                 style={{ marginRight: 4, verticalAlign: 'middle' }}
                             />

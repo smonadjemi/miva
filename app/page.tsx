@@ -2,6 +2,7 @@
 import { colorsAtom, leafNodesAtom, taxonomyAtom } from '@/atoms/global_atoms';
 import PaperView from '@/components/PaperView';
 import TaxonomyView from '@/components/TaxonomyView';
+import { TaxonomyNode } from '@/types/types';
 import { Box, Button, Grid, Group, ScrollArea, Text, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { useAtom } from 'jotai';
@@ -63,7 +64,7 @@ function getLeafInfo(
 
 export default function MainLayout() {
 
-  const [data, setData] = useAtom<any>(taxonomyAtom);
+  const [data, setData] = useAtom(taxonomyAtom);
   const [papers, setPapers] = useState<any>(null);
   const [colors, setColors] = useAtom(colorsAtom);
   const [leafNodes, setLeafNodes] = useAtom(leafNodesAtom)
@@ -73,7 +74,7 @@ export default function MainLayout() {
   const [active, setActive] = useState<'left' | 'right'>('left');
 
   useEffect(() => {
-    fetch('/data/taxonomy.json')
+    fetch('./data/taxonomy.json')
       .then((res) => res.json())
       .then((json) => {
         setData(json)
@@ -88,13 +89,13 @@ export default function MainLayout() {
   }, []);
 
   useEffect(() => {
-    fetch('/data/papers.json')
+    fetch('./data/papers.json')
       .then((res) => res.json())
       .then((json) => setPapers(json));
   }, []);
 
   useEffect(() => {
-    fetch('/data/colors.json')
+    fetch('./data/colors.json')
       .then((res) => res.json())
       .then((json) => setColors(json));
   }, []);
@@ -122,7 +123,7 @@ export default function MainLayout() {
           <Text fw={500} size="lg" mb="sm">
             Integrated Taxonomy
           </Text>
-          <TaxonomyView node={data} />
+          {data && <TaxonomyView node={data} />}
         </ScrollArea>
 
         {/* Right Section */}

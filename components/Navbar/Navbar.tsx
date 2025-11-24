@@ -27,7 +27,7 @@ export function Navbar() {
     <header className={classes.header}>
       <div className={classes.inner}>
         <Group>
-          <img src="/logo.svg" alt="Logo" width={30} height={30}/>
+          <img src="./logo.svg" alt="Logo" width={30} height={30}/>
           <Text fz="lg" fw={500} component="a" href={'/'}>MI-VA</Text>
         </Group>
 
