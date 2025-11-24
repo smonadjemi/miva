@@ -2,8 +2,7 @@
 import { colorsAtom, leafNodesAtom, taxonomyAtom } from '@/atoms/global_atoms';
 import PaperView from '@/components/PaperView';
 import TaxonomyView from '@/components/TaxonomyView';
-import { TaxonomyNode } from '@/types/types';
-import { Box, Button, Grid, Group, ScrollArea, Text, useMantineTheme } from '@mantine/core';
+import { Box, Button, Group, ScrollArea, Text, useMantineTheme } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { useAtom } from 'jotai';
 import { useEffect, useState } from 'react';

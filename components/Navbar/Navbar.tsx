@@ -1,14 +1,9 @@
 "use client";
-
-import { IconSearch } from '@tabler/icons-react';
-import { Autocomplete, Burger, Group, Text } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-// import { MantineLogo } from '@mantinex/mantine-logo';
+import { Group, Text } from '@mantine/core';
 import classes from './style.module.css';
 
 const links = [
-  { link: '', label: 'Manuscript' },
-  { link: '', label: 'GitHub' },
+  { link: 'https://arxiv.org/abs/2509.19152', label: 'Manuscript' },
 ];
 
 export function Navbar() {
@@ -28,7 +23,7 @@ export function Navbar() {
       <div className={classes.inner}>
         <Group>
           <img src="./logo.svg" alt="Logo" width={30} height={30}/>
-          <Text fz="lg" fw={500} component="a" href={'/'}>MI-VA</Text>
+          <Text fz="lg" fw={500} component="a" href={'./'}>MI-VA</Text>
         </Group>
 
         <Group>
