@@ -1,0 +1,30 @@
+{
+    "0": {
+        "light": "#BFE4FA",
+        "dark": "#0092E9"
+    },
+    "1": {
+        "light": "#F1DAC7",
+        "dark": "#C96A20"
+    },
+    "2": {
+        "light": "#BBC7B8",
+        "dark": "#3A8435"
+    },
+    "3": {
+        "light": "#DDD5DB",
+        "dark": "#7C546E"
+    },
+    "4": {
+        "light": "#CBD8DF",
+        "dark": "#156082"
+    },
+    "5": {
+        "light": "#EBC9C6",
+        "dark": "#C00000"
+    },
+    "6": {
+        "light": "#D0D0D0",
+        "dark": "#404040"
+    }
+}

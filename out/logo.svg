@@ -1,0 +1,26 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="35%" stop-color="#BFE4FA"/>
+      <stop offset="65%" stop-color="#F1DAC7"/>
+    </linearGradient>
+
+    <!-- Edge linear gradient at 45 degrees -->
+    <linearGradient id="edgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C546E"/>
+      <stop offset="20%" stop-color="#3A8435"/>
+      <stop offset="40%" stop-color="#404040"/>
+      <stop offset="60%" stop-color="#156082"/>
+      <stop offset="80%" stop-color="#156082"/>
+      <stop offset="100%" stop-color="#C00000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="5" y="5" width="150" height="150" rx="20" ry="20" fill="url(#bgGradient)" />
+
+  <!-- Rounded square border with angled linear gradient -->
+  <rect x="5" y="5" width="150" height="150" rx="20" ry="20"
+        fill="none" stroke="url(#edgeGradient)" stroke-width="15"/>
+</svg>
