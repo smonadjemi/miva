@@ -106,6 +106,7 @@ export default function MainLayout() {
       <Box
         style={{
           display: isMobile ? 'block' : 'flex',
+          paddingBottom: isMobile ? 80 : 0,
           height: '100%',
         }}
       >

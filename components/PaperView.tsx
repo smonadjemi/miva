@@ -6,9 +6,6 @@ import { useAtomValue } from "jotai";
 
 export default function PaperView({ papers }: { papers: Paper[] | null }) {
 
-    const leafNodes = useAtomValue(leafNodesAtom)
-    const colors = useAtomValue(colorsAtom)
-
     if (!papers) {
         return <div>Loading papers...</div>;
     }
@@ -45,9 +42,6 @@ function Tags({ tags }: { tags: string[] }) {
 
         return acc;
     }, {});
-
-    console.log(groups);
-
 
     return <Flex wrap="wrap" gap={0} pt={'md'}>
         {
