@@ -1,8 +1,9 @@
 "use client";
 
-import { colorsAtom } from '@/atoms/global_atoms';
-import { Group, Avatar, Text, Accordion, AccordionItem, AccordionControl, AccordionPanel } from '@mantine/core';
-import { IconArrowRight } from '@tabler/icons-react';
+import { colorsAtom, papersAtom } from '@/atoms/global_atoms';
+import { Paper } from '@/types/types';
+import { Group, Avatar, Text, Accordion, AccordionItem, AccordionControl, AccordionPanel, Card, Title, Box, Badge } from '@mantine/core';
+import { Icon12Hours, IconArrowRight, IconBrackets, IconPoint, IconPointFilled } from '@tabler/icons-react';
 import { useAtomValue } from 'jotai';
 import { useEffect, useState } from 'react';
 
@@ -15,23 +16,53 @@ interface AccordionLabelProps {
     icon: string;
     description: string;
     color: string;
+    isLeaf?: boolean;
+    count?: number;
 }
 
-function AccordionLabel({ label, icon, description, color }: AccordionLabelProps) {
-    console.log(color)
+function AccordionLabel({ label, icon, description, color, isLeaf, count }: AccordionLabelProps) {
     return (
         <Group wrap="nowrap">
-            <Avatar src={icon? `.${icon}` : null} radius="xl" size="md" variant="filled" color={color} bg={color}>
-                {!icon && <IconArrowRight />}
+            <Avatar src={icon ? `.${icon}` : null} radius="xl" size="md" variant="filled" color={color} bg={color}>
+                {!icon && !isLeaf && <IconBrackets />}
+                {!icon && isLeaf && <IconPointFilled />}
             </Avatar>
-            <div>
-                <Text>{label}</Text>
+            <Box w="100%">
+                <Group w="100%" justify={'space-between'}>
+                    <Text>{label}</Text>
+                    {
+                       isLeaf && <Badge color={color} variant="light" size="sm">{count}</Badge>
+                    }
+                </Group>
                 <Text size="sm" c="var(--mantine-color-gray-8)" fw={300}>
                     {description}
                 </Text>
-            </div>
+            </Box>
         </Group>
     );
+}
+
+
+function ExamplesList({ papers }: { papers: Paper[] }) {
+
+
+    return (
+        <>
+            {
+                papers.map((paper, i) => (
+                    <Box key={paper.citation} mb="md" p="md" >
+                        <Text fw={500} c={"var(--mantine-color-gray-8)"} size="sm">{paper.title}</Text>
+                        <Group justify="space-between">
+                            <Text c="var(--mantine-color-gray-7)" size="xs" mb="sm">{paper.venue} - {paper.year}</Text>
+                            <Text c="var(--mantine-color-blue-7)" component="a" href={paper.url} target="_blank" rel="noopener noreferrer" size="xs" mb="xs">Link to paper</Text>
+                        </Group>
+                    </Box>
+                )
+
+                )
+            }
+        </>
+    )
 }
 
 type Node = {
@@ -46,6 +77,8 @@ type Node = {
 export default function TaxonomyView({ node, inheritedColorCode }: { node: Node, inheritedColorCode?: string }) {
 
     const colors = useAtomValue(colorsAtom)
+    const papers = useAtomValue(papersAtom)
+
 
     const items = node?.children?.map((item) => {
 
@@ -54,10 +87,14 @@ export default function TaxonomyView({ node, inheritedColorCode }: { node: Node,
 
         return <AccordionItem value={item.id} key={item.id} bg={col.light} bd={`0.25px solid ${col.dark}`}>
             <AccordionControl aria-label={item.label}>
-                <AccordionLabel {...item} color={col.dark} />
+                <AccordionLabel {...item} color={col.dark} isLeaf={!item.children || item.children.length === 0} count={papers.filter(paper => paper.tags.includes(item.id)).length} />
             </AccordionControl>
             <AccordionPanel>
-                <TaxonomyView node={item} inheritedColorCode={inheritedColorCode? inheritedColorCode: item.color_code} />
+                {
+                    (!item.children || item.children.length === 0) &&
+                    <ExamplesList papers={papers.filter(paper => paper.tags.includes(item.id))} />
+                }
+                <TaxonomyView node={item} inheritedColorCode={inheritedColorCode ? inheritedColorCode : item.color_code} />
             </AccordionPanel>
         </AccordionItem>
     });
@@ -68,3 +105,5 @@ export default function TaxonomyView({ node, inheritedColorCode }: { node: Node,
         </Accordion>
     );
 }
+
+

@@ -1,5 +1,5 @@
 "use client";
-import { colorsAtom, leafNodesAtom, taxonomyAtom } from '@/atoms/global_atoms';
+import { colorsAtom, leafNodesAtom, papersAtom, taxonomyAtom } from '@/atoms/global_atoms';
 import PaperView from '@/components/PaperView';
 import TaxonomyView from '@/components/TaxonomyView';
 import { Box, Button, Group, ScrollArea, Text, useMantineTheme } from '@mantine/core';
@@ -64,7 +64,7 @@ function getLeafInfo(
 export default function MainLayout() {
 
   const [data, setData] = useAtom(taxonomyAtom);
-  const [papers, setPapers] = useState<any>(null);
+  const [papers, setPapers] = useAtom(papersAtom);
   const [colors, setColors] = useAtom(colorsAtom);
   const [leafNodes, setLeafNodes] = useAtom(leafNodesAtom)
 

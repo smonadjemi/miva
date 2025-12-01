@@ -15,14 +15,14 @@
         {
           "id": "goal_augmentation",
           "label": "Goal Augmentation",
-          "description": "TBW",
+          "description": "The human agent enhances an artificial agent's understanding of the analytic goal through clarification and added information.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "specify_constraints",
               "label": "Specify Constraints",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -30,7 +30,7 @@
             {
               "id": "select_seed_examples",
               "label": "Select Seed Examples",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -40,14 +40,14 @@
         {
           "id": "decision_augmentation",
           "label": "Decision Augmentation",
-          "description": "TBW",
+          "description": "The human selects an action from the set of alternatives.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "approve_results",
               "label": "Approve Results",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -55,7 +55,7 @@
             {
               "id": "accept_suggestions",
               "label": "Accept Suggestions",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -63,7 +63,7 @@
             {
               "id": "assign_values_to_parameters",
               "label": "Assign Values To Parameters",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -73,22 +73,22 @@
         {
           "id": "cognitive_augmentation",
           "label": "Cognitive Augmentation",
-          "description": "TBW",
+          "description": "The human injests their (sometime subjective) perspective towards an action or piece of information.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "inspect_userdefined_alternatives",
               "label": "Inspect User-Defined Alternatives",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "inspect_aisuggested_alternatives",
-              "label": "Inspect Ai-Suggested Alternatives",
-              "description": "TBW",
+              "label": "Inspect AI-Suggested Alternatives",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -96,7 +96,7 @@
             {
               "id": "determine_importance",
               "label": "Determine Importance",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -106,22 +106,22 @@
         {
           "id": "action_augmentation",
           "label": "Action Augmentation",
-          "description": "TBW",
+          "description": "The human agent modifies the set of actions under consideration by either the human or the artificial agents.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "manipulate_recommendations",
               "label": "Manipulate Recommendations",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "prompt_the_ai_agent",
-              "label": "Prompt The Ai Agent",
-              "description": "TBW",
+              "label": "Prompt the Artificial Agent",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -140,14 +140,14 @@
         {
           "id": "goal_augmentation_",
           "label": "Goal Augmentation ",
-          "description": "TBW",
+          "description": "The artificial agent enhances a human agent's understanding of the analytic goal through clarification and added information.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "explore_search_space",
               "label": "Explore Search Space",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -157,14 +157,14 @@
         {
           "id": "decision_augmentation_",
           "label": "Decision Augmentation ",
-          "description": "TBW",
+          "description": "The artificial agent selects an action from the set of alternatives.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "update_layout",
               "label": "Update Layout",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -172,7 +172,7 @@
             {
               "id": "classify_topics",
               "label": "Classify Topics",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -182,14 +182,14 @@
         {
           "id": "cognitive_augmentation_",
           "label": "Cognitive Augmentation ",
-          "description": "TBW",
+          "description": "The artificial agent injests their (sometime subjective) perspective towards an action or piece of information.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "summarize_text",
               "label": "Summarize Text",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -197,15 +197,15 @@
             {
               "id": "extract_data",
               "label": "Extract Data",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "extract_structure_from_charts",
-              "label": "Extract Structure From Charts",
-              "description": "TBW",
+              "label": "Extract Structure from Charts",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -213,7 +213,7 @@
             {
               "id": "predict_outcomes",
               "label": "Predict Outcomes",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -223,14 +223,14 @@
         {
           "id": "action_augmentation_",
           "label": "Action Augmentation ",
-          "description": "TBW",
+          "description": "The artificial agent modifies the set of actions under consideration by either the human or the artificial agents.",
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "recommend_alternatives",
               "label": "Recommend Alternatives",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -238,7 +238,7 @@
             {
               "id": "generate_search_space",
               "label": "Generate Search Space",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -264,7 +264,7 @@
             {
               "id": "summarize_text",
               "label": "Summarize Text",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -272,7 +272,7 @@
             {
               "id": "discover_relevant_data",
               "label": "Discover Relevant Data",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -280,7 +280,7 @@
             {
               "id": "extract_data_from_images",
               "label": "Extract Data From Images",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -288,7 +288,7 @@
             {
               "id": "annotate_data",
               "label": "Annotate Data",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -296,7 +296,7 @@
             {
               "id": "rank_data",
               "label": "Rank Data",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -313,7 +313,7 @@
             {
               "id": "extract_visualization_layout",
               "label": "Extract Visualization Layout",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -321,7 +321,7 @@
             {
               "id": "make_visualizations",
               "label": "Make Visualizations",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -329,7 +329,7 @@
             {
               "id": "generate_captions",
               "label": "Generate Captions",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -337,15 +337,15 @@
             {
               "id": "refine_layout",
               "label": "Refine Layout",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "refer_to_visualizations_in_text",
-              "label": "Refer To Visualizations In Text",
-              "description": "TBW",
+              "label": "Refer to Visualizations in Text",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -362,7 +362,7 @@
             {
               "id": "refine_models",
               "label": "Refine Models",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -370,7 +370,7 @@
             {
               "id": "inspect_models",
               "label": "Inspect Models",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -378,7 +378,7 @@
             {
               "id": "analyze_clusters",
               "label": "Analyze Clusters",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -386,7 +386,7 @@
             {
               "id": "understand_models",
               "label": "Understand Models",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -403,7 +403,7 @@
             {
               "id": "discover_evidence",
               "label": "Discover Evidence",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -411,7 +411,7 @@
             {
               "id": "navigate_design_space",
               "label": "Navigate Design Space",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -419,7 +419,7 @@
             {
               "id": "generate_insight",
               "label": "Generate Insight",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -427,7 +427,7 @@
             {
               "id": "externalize_knowledge",
               "label": "Externalize Knowledge",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -435,7 +435,7 @@
             {
               "id": "forecast_outcomes",
               "label": "Forecast Outcomes",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -454,22 +454,22 @@
         {
           "id": "speed",
           "label": "Speed",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "faster_than_human_alone",
-              "label": "Faster Than Human Alone",
-              "description": "TBW",
+              "label": "Faster than Human Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "faster_than_ai_alone",
-              "label": "Faster Than Ai Alone",
-              "description": "TBW",
+              "label": "Faster than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -479,22 +479,22 @@
         {
           "id": "accuracy",
           "label": "Accuracy",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "more_accurate_than_human_alone",
-              "label": "More Accurate Than Human Alone",
-              "description": "TBW",
+              "label": "More Accurate than Human Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_accurate_than_ai_alone",
-              "label": "More Accurate Than Ai Alone",
-              "description": "TBW",
+              "label": "More Accurate than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -503,63 +503,63 @@
         },
         {
           "id": "alignment_with_human_mind",
-          "label": "Alignment With Human Mind",
-          "description": "TBW",
+          "label": "Alignment with Human Mind",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "more_intune_with_humans_notion_of_quality",
-              "label": "More In-Tune With Human'S Notion Of Quality",
-              "description": "TBW",
+              "label": "More In-Tune with Human's Notion of Quality",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_aligned_with_humans_preferences",
-              "label": "More Aligned With Human'S Preferences",
-              "description": "TBW",
+              "label": "More Aligned with Human's Preferences",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_creative_than_ai_alone",
-              "label": "More Creative Than Ai Alone",
-              "description": "TBW",
+              "label": "More Creative than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_flexible_than_ai_alone",
-              "label": "More Flexible Than Ai Alone",
-              "description": "TBW",
+              "label": "More Flexible than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_sociable_than_ai_alone",
-              "label": "More Sociable Than Ai Alone",
-              "description": "TBW",
+              "label": "More Sociable than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_intune_with_humans_mental_model",
-              "label": "More In-Tune With Human'S Mental Model",
-              "description": "TBW",
+              "label": "More In-Tune with Human's Mental Model",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_engaging_than_human_alone",
-              "label": "More Engaging Than Human Alone",
-              "description": "TBW",
+              "label": "More Engaging than Human Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -569,22 +569,22 @@
         {
           "id": "knowledge",
           "label": "Knowledge",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "more_domain_knowledge_than_ai_alone",
-              "label": "More Domain Knowledge Than Ai Alone",
-              "description": "TBW",
+              "label": "More Domain Knowledge than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_realtime_knowledge_than_humanai_alone",
-              "label": "More Real-Time Knowledge Than Human/Ai Alone",
-              "description": "TBW",
+              "label": "More Real-Time Knowledge than Human/AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -594,46 +594,46 @@
         {
           "id": "accessibility_and_convenience",
           "label": "Accessibility And Convenience",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "lower_cognitive_load_than_human_alone",
-              "label": "Lower Cognitive Load Than Human Alone",
-              "description": "TBW",
+              "label": "Lower Cognitive Load than Human Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "easier_model_understanding_than_ai_alone",
-              "label": "Easier Model Understanding Than Ai Alone",
-              "description": "TBW",
+              "label": "Easier Model Understanding than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_accessible_to_nontechnical_users_than_ai_alone",
-              "label": "More Accessible To Non-Technical Users Than Ai Alone",
-              "description": "TBW",
+              "label": "More Accessible to Non-Technical Users than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "more_familiar_to_users_than_ai_alone",
-              "label": "More Familiar To Users Than Ai Alone",
-              "description": "TBW",
+              "label": "More Familiar to Users than AI Alone",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
             },
             {
               "id": "nicer_to_have_human_control",
-              "label": "Nicer To Have Human Control",
-              "description": "TBW",
+              "label": "Nicer to Have Human Control",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -652,14 +652,14 @@
         {
           "id": "qualitative",
           "label": "Qualitative",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "interview",
               "label": "Interview",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -667,7 +667,7 @@
             {
               "id": "qualitative_algorithm_evaluation",
               "label": "Qualitative Algorithm Evaluation",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -675,7 +675,7 @@
             {
               "id": "case_study",
               "label": "Case Study",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -683,7 +683,7 @@
             {
               "id": "field_study",
               "label": "Field Study",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -693,14 +693,14 @@
         {
           "id": "quantitative",
           "label": "Quantitative",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": [
             {
               "id": "algorithm_evaluation",
               "label": "Algorithm Evaluation",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -708,7 +708,7 @@
             {
               "id": "experiment",
               "label": "Experiment",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -716,7 +716,7 @@
             {
               "id": "likert_survey",
               "label": "Likert Survey",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -724,7 +724,7 @@
             {
               "id": "quantitative_algorithm_evaluation",
               "label": "Quantitative Algorithm Evaluation",
-              "description": "TBW",
+              "description": null,
               "color_code": null,
               "icon": null,
               "children": []
@@ -815,7 +815,7 @@
         {
           "id": "consider_ai_latency",
           "label": "Consider AI Latency",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": []
@@ -823,7 +823,7 @@
         {
           "id": "consider_costs_benefits_uncertainties",
           "label": "Consider Costs, Benefits, Uncertainties",
-          "description": "TBW",
+          "description": null,
           "color_code": null,
           "icon": null,
           "children": []
