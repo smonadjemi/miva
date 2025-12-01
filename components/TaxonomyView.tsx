@@ -31,7 +31,7 @@ function AccordionLabel({ label, icon, description, color, isLeaf, count }: Acco
                 <Group w="100%" justify={'space-between'}>
                     <Text>{label}</Text>
                     {
-                       isLeaf && <Badge color={color} variant="light" size="sm">{count}</Badge>
+                        isLeaf && <Badge color={color} variant="light" size="sm">{count}</Badge>
                     }
                 </Group>
                 <Text size="sm" c="var(--mantine-color-gray-8)" fw={300}>
@@ -49,8 +49,14 @@ function ExamplesList({ papers }: { papers: Paper[] }) {
     return (
         <>
             {
+                papers.length > 0 ?
+                <Text fw={800} c="var(--mantine-color-gray-8)" size="sm" mb="xs" px={'md'}>Example Papers:</Text> :
+                <Text fw={400} c="var(--mantine-color-gray-7)" size="xs" mb="sm" px={'md'}>No example papers available for this category.</Text>
+            }
+
+            {
                 papers.map((paper, i) => (
-                    <Box key={paper.citation} mb="md" p="md" >
+                    <Box key={paper.citation} mb="md" px="md" py={'xs'} >
                         <Text fw={500} c={"var(--mantine-color-gray-8)"} size="sm">{paper.title}</Text>
                         <Group justify="space-between">
                             <Text c="var(--mantine-color-gray-7)" size="xs" mb="sm">{paper.venue} - {paper.year}</Text>
