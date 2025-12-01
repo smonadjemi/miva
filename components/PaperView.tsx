@@ -43,11 +43,11 @@ function Tags({ tags }: { tags: string[] }) {
         return acc;
     }, {});
 
-    return <Flex wrap="wrap" gap={0} pt={'md'}>
+    return <Flex wrap="wrap" gap={'xs'} pt={'md'}>
         {
             taxonomy?.children.map((group) => (
                 groups[group.id]?.length > 0 ?
-                    <Box key={group.id} px={'xs'}>
+                    <Box key={group.id} px={'0'}>
                         <Tooltip
 
                             bg={colors && group.color_code in colors ? colors[group.color_code].light : ''}
@@ -67,7 +67,7 @@ function Tags({ tags }: { tags: string[] }) {
                             </Indicator>
 
                         </Tooltip> </Box> :
-                    <Box key={group.id} px={'xs'}>
+                    <Box key={group.id} px={'0'}>
                         <Tooltip
                             key={group.id}
                             label={<Text c={'var(--mantine-color-gray-8)'} size="sm">No tags for {group.label}</Text>}
