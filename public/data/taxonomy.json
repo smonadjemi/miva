@@ -138,14 +138,6 @@
       "icon": "/icons/robot.png",
       "children": [
         {
-          "id": "goal_augmentation_",
-          "label": "Goal Augmentation ",
-          "description": "The artificial agent enhances a human agent's understanding of the analytic goal through clarification and added information.",
-          "color_code": null,
-          "icon": null,
-          "children": []
-        },
-        {
           "id": "decision_augmentation_",
           "label": "Decision Augmentation ",
           "description": "The artificial agent selects an action from the set of alternatives.",

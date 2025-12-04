@@ -271,7 +271,7 @@
             "efficient_result_refinement",
             "evaluation",
             "generate_search_space",
-            "goal_augmentation",
+            "action_augmentation",
             "goal_augmentation_",
             "human_contribution",
             "level_of_automation",
