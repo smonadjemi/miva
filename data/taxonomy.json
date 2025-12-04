@@ -143,16 +143,7 @@
           "description": "The artificial agent enhances a human agent's understanding of the analytic goal through clarification and added information.",
           "color_code": null,
           "icon": null,
-          "children": [
-            {
-              "id": "explore_search_space",
-              "label": "Explore Search Space",
-              "description": null,
-              "color_code": null,
-              "icon": null,
-              "children": []
-            }
-          ]
+          "children": []
         },
         {
           "id": "decision_augmentation_",
