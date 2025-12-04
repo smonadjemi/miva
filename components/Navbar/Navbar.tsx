@@ -3,7 +3,7 @@ import { Group, Text } from '@mantine/core';
 import classes from './style.module.css';
 
 const links = [
-  { link: 'https://arxiv.org/abs/2509.19152', label: 'Manuscript' },
+  { link: '', label: 'Manuscript' },
 ];
 
 export function Navbar() {
