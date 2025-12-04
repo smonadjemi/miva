@@ -107,8 +107,6 @@ function TagTooltip({ category, tags }: { category: string, tags: string[] }) {
                     <div key={tag}>
                         <Text fw={400} c="var(--mantine-color-gray-8)" mt={4} size="xs">
                             {leafNodes && leafNodes[tag] && leafNodes[tag].label ? leafNodes[tag].label : tag}
-                        </Text>
-                        <Text c="var(--mantine-color-gray-7)" size="xs" mb={6}>
                             {leafNodes && leafNodes[tag] && leafNodes[tag].description && `:${leafNodes[tag].description}`}
                         </Text>
                         <Divider my={12} size={0.2} color="gray.7" />
