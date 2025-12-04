@@ -270,7 +270,7 @@
             "case_study",
             "efficient_result_refinement",
             "evaluation",
-            "explore_search_space",
+            "generate_search_space",
             "goal_augmentation",
             "goal_augmentation_",
             "human_contribution",
