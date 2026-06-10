@@ -1,6 +1,6 @@
 import { colorsAtom, leafNodesAtom, taxonomyAtom } from "@/atoms/global_atoms";
 import { Paper } from "@/types/types";
-import { Avatar, Box, Divider, Flex, Group, Indicator, Text, Tooltip } from "@mantine/core";
+import { Anchor, Avatar, Badge, Box, Divider, Flex, Group, Indicator, Stack, Text, Tooltip } from "@mantine/core";
 import { useAtomValue } from "jotai";
 
 
@@ -11,18 +11,34 @@ export default function PaperView({ papers }: { papers: Paper[] | null }) {
     }
 
     return (
-        <div>
-            {papers.sort((a, b) => a.title.localeCompare(b.title)).map((paper: any) => (
-                <Box key={paper.citation} mb="md" p="md" style={{ border: '1px solid var(--mantine-color-gray-4)', borderRadius: 8 }}>
-                    <Text fw={500} c={"var(--mantine-color-gray-8)"} size="lg">{paper.title}</Text>
-                    <Group justify="space-between">
-                        <Text c="var(--mantine-color-gray-7)" size="sm" mb="sm">{paper.venue} - {paper.year}</Text>
-                        <Text c="var(--mantine-color-blue-7)" component="a" href={paper.url} target="_blank" rel="noopener noreferrer" size="sm" mb="sm">Link to paper</Text>
+        <Stack gap="sm">
+            {[...papers].sort((a, b) => a.title.localeCompare(b.title)).map((paper: Paper) => (
+                <Box
+                    key={paper.citation}
+                    p="md"
+                    onClick={(event) => event.stopPropagation()}
+                    style={{
+                        border: '1px solid var(--mantine-color-gray-3)',
+                        borderRadius: 8,
+                        background: 'white',
+                    }}
+                >
+                    <Group justify="space-between" align="flex-start" gap="md">
+                        <Box style={{ flex: 1 }}>
+                            <Text fw={650} c="var(--mantine-color-gray-9)" size="md" lh={1.3}>{paper.title}</Text>
+                            <Group gap={6} mt={6}>
+                                <Badge variant="light" color="gray">{paper.year}</Badge>
+                                <Text c="var(--mantine-color-gray-7)" size="sm">{paper.venue}</Text>
+                            </Group>
+                        </Box>
+                        <Anchor href={paper.url} target="_blank" rel="noopener noreferrer" size="sm" fw={600}>
+                            Paper
+                        </Anchor>
                     </Group>
                     <Tags tags={paper.tags} />
                 </Box>
             ))}
-        </div>
+        </Stack>
     );
 }
 

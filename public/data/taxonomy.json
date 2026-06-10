@@ -681,14 +681,6 @@
           "icon": null,
           "children": [
             {
-              "id": "algorithm_evaluation",
-              "label": "Algorithm Evaluation",
-              "description": null,
-              "color_code": null,
-              "icon": null,
-              "children": []
-            },
-            {
               "id": "experiment",
               "label": "Experiment",
               "description": null,

@@ -4,7 +4,6 @@ import '@mantine/core/styles.css';
 import "./globals.css";
 
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
-import { Navbar } from "@/components/Navbar/Navbar";
 
 const blackScale: readonly [
   string, string, string, string, string,
@@ -28,8 +27,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mixed Initiative Visual Analytics",
-  description: "A scoping review of mixed-initiative visual analytics systems.",
+  metadataBase: new URL("https://smonadjemi.github.io"),
+  title: "A Scoping Review of Mixed-Initiative Visual Analytics",
+  description: "Explore the taxonomy and example papers from a scoping review of mixed-initiative visual analytics systems.",
+  alternates: {
+    canonical: "/miva",
+  },
+  openGraph: {
+    title: "A Scoping Review of Mixed-Initiative Visual Analytics",
+    description: "Explore the taxonomy and example papers from a scoping review of mixed-initiative visual analytics systems.",
+    url: "/miva",
+    siteName: "MI-VA Taxonomy Explorer",
+    type: "website",
+    images: [
+      {
+        url: "/miva/logo.png",
+        width: 512,
+        height: 512,
+        alt: "MI-VA Taxonomy Explorer logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "A Scoping Review of Mixed-Initiative Visual Analytics",
+    description: "Explore the taxonomy and example papers from a scoping review of mixed-initiative visual analytics systems.",
+    images: ["/miva/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -40,15 +68,10 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
-        <link
-          rel="icon"
-          href="/logo.svg?svg"
-          type="image/svg+xml"
-          sizes="160x160"
-        />
+        <link rel="icon" href="/logo.png" type="image/png" />
         <ColorSchemeScript forceColorScheme="light" defaultColorScheme="light" />
       </head>
-      <body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <MantineProvider
           forceColorScheme="light"
           defaultColorScheme="light"
@@ -58,7 +81,6 @@ export default function RootLayout({
             primaryShade: 7
           }}
         >
-          <Navbar />
           {children}
         </MantineProvider>
       </body>
