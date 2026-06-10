@@ -27,7 +27,7 @@ interface LeafInfo {
 
 const resourceLinks = [
   { label: 'Paper', href: 'https://arxiv.org/abs/2509.19152' },
-  { label: 'Supplemental Material', href: '/supplemental.pdf' },
+  { label: 'Supplemental Material', href: '/miva/supplemental.pdf' },
 ];
 
 function getLeafInfo(
